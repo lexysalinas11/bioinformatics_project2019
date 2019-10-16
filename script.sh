@@ -2,9 +2,9 @@
 
 #align mcra gene
 cat $2 >> masterMCRA.fasta
-muscle -in masterMCRA.fasta -out mcra_align.muscle
+./muscle -in masterMCRA.fasta -out mcra_align.muscle
 
 #align hsp70 genes
 cat $3 >> masterHSP.fasta
-muscle -in masterHSP.fasta -out hsp_align.muscle
+./muscle -in masterHSP.fasta -out hsp_align.muscle
 
