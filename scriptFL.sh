@@ -1,15 +1,15 @@
 #usage: bash scriptFL.sh ref_sequences/mcrAgene_*.fasta ref_sequences/hsp70gene_*.fasta proteomes/*.fasta
 
 #combine mcrA gene files into one fasta file
-for fileMCRA in $1
+for file in $1 
 do
-cat $fileMCRA >> master_mcra.fasta
+cat $file >> master_mcra.fasta
 done
 
-#combina hsp70 gene files into one fasta file
-for fileHSP in $2
+#combine hsp70 gene files into one fasta file
+for file in $2
 do
-cat $fileHSP >> master_hsp.fasta
+cat $file >> master_hsp.fasta
 done
 
 #align mcra
